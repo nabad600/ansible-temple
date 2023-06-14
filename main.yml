@@ -1,6 +1,6 @@
 ## Lauch Basic EC@2 instance in mumbai region.
 - name: Ansible Play
-  hosts: localhost
+  hosts: all
   tasks:
   - name:   launching AWS instance using Ansible
 
