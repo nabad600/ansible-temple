@@ -1,0 +1,13 @@
+## Lauch Basic EC@2 instance in mumbai region.
+- name: Ansible Play
+  hosts: localhost
+  tasks:
+  - name:   launching AWS instance using Ansible
+
+    ec2:
+      key_name: mumbai
+      region: ap-south-1
+      instance_type: t2.micro
+      image: ami-0f5ee92e2d63afc18
+      instance_tags:
+        Name: Daemo_server

@@ -1,0 +1,9 @@
+- name: Start instances
+  hosts: localhost
+  tasks:
+    - name: Start instances that were previously Stoped
+      ec2:
+        state: running
+        region: ap-south-1
+        instance_tags:
+           Name: Daemo_server
